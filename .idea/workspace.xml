@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a58f6330-eb66-4e43-8dc5-0e1f6325921a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/jdnd/course3/lesson2/OrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/jdnd/course3/lesson2/OrderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/jdnd/course3/lesson2/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/jdnd/course3/lesson2/entity/Order.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,19 +48,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="401">
+              <caret line="100" column="56" lean-forward="true" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-462">
               <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
             </state>
           </provider>
@@ -102,8 +98,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java" />
       </list>
     </option>
   </component>
@@ -268,13 +264,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15506808" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.08547655" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -294,7 +291,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" x="509" y="166" width="434" height="611" id="Run" order="8" visible="true" weight="0.4054463" />
+      <window_info active="true" anchor="right" x="509" y="166" width="434" height="611" id="Run" order="8" visible="true" weight="0.3721634" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -361,17 +358,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="-462">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/entity/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/lesson2/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        <state relative-caret-position="401">
+          <caret line="100" column="56" lean-forward="true" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
         </state>
       </provider>
     </entry>

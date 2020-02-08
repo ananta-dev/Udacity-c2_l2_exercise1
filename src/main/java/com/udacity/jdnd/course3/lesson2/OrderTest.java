@@ -6,9 +6,11 @@ import com.udacity.jdnd.course3.lesson2.entity.OrderItem;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.List;
 
 public class OrderTest {
 
@@ -61,7 +63,11 @@ public class OrderTest {
         em.close();
 
         readOrder(order.getOrderId(), factory);
-        deleteOrder(order.getOrderId(), factory);
+        runQuery(factory);
+
+
+        // Let us not delete the order for now...
+        // deleteOrder(order.getOrderId(), factory);
     }
 
     private static void readOrder(Integer orderId, EntityManagerFactory factory) {
@@ -77,6 +83,24 @@ public class OrderTest {
 
         em.close();
 
+    }
+
+    private static void runQuery(EntityManagerFactory factory) {
+        EntityManager em = factory.createEntityManager();
+
+/**        Query query = em.createQuery("SELECT Order o, oi FROM Order o JOIN o.OrderItems");
+
+        List<Order> results = query.getResultList();
+
+        for (Order o : results) {
+            System.err.println(o.getCustomerName() + " => " + o.getCustomerAddress());
+        } */
+
+//        Query query = em.createQuery("SELECT o, i FROM Order o JOIN o.orderItems i");
+        Query query = em.createQuery("SELECT o FROM Order o");
+        List<Object> resultList = query.getResultList();
+        resultList.forEach(System.out::println);
+        em.close();
     }
 
    private static void deleteOrder(Integer orderId, EntityManagerFactory factory) {
