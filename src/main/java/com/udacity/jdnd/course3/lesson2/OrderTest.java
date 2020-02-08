@@ -61,6 +61,7 @@ public class OrderTest {
         em.close();
 
         readOrder(order.getOrderId(), factory);
+        deleteOrder(order.getOrderId(), factory);
     }
 
     private static void readOrder(Integer orderId, EntityManagerFactory factory) {
@@ -71,10 +72,11 @@ public class OrderTest {
         Order thisOrder = em.find(Order.class, orderId);
         System.err.println("Order: " + thisOrder);
 
+        // OrderItem is fetched eagerly by using a JOIN
+        thisOrder.getOrderItems().forEach(orderItem -> System.err.println("Order Item:" + orderItem));
+
         em.close();
 
-        // OrderItem is fetched eagerly by using a JOIN
-        // OrderItem orderItem1 = em.
     }
 
    private static void deleteOrder(Integer orderId, EntityManagerFactory factory) {
@@ -82,12 +84,12 @@ public class OrderTest {
        EntityManager em = factory.createEntityManager();
 
        // STEP 2: use the find() method to load an order
-       Order order = new Order();
-       order.setOrderId(orderId);
+       Order order = em.find(Order.class, orderId);
+       em.getTransaction().begin();
        em.remove(order);
-
-       System.err.println("Order: " + order);
-
+       em.getTransaction().commit();
        em.close();
+       System.err.println("Deleted Order: " + order);
+
    }
 }

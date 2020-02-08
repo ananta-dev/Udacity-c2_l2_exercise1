@@ -22,7 +22,7 @@ public class Order {
     @Column(name = "created_time")
     private Timestamp createdTime;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "order", orphanRemoval =true, cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private List<OrderItem> orderItems;
 
     public Integer getOrderId() {
