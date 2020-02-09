@@ -29,10 +29,29 @@ public class Lesson2Application {
 	public CommandLineRunner demo(OrderRepository repository) {
 		return (args) -> {
 			// save a couple of customers
+			Order order = new Order();
+			order.setCustomerName("Mary Doolittle");
+			order.setCustomerAddress("123 Main Street, Birmingham, AL, 40861, USA");
+			order.setCreatedTime(Timestamp.valueOf(LocalDateTime.now()));
 
 			// create order item1
+			OrderItem orderItem1 = new OrderItem();
+			orderItem1.setOrder(order);
+			orderItem1.setItemName("Parachute");
+			orderItem1.setItemCount(3);
+
 
 			// create order item2
+			OrderItem orderItem2 = new OrderItem();
+			orderItem2.setOrder(order);
+			orderItem2.setItemName("Hand glider");
+			orderItem2.setItemCount(3);
+
+			order = repository.save(order);
+			System.err.println("Saved Order ID: " + order.getOrderId());
+
+			Optional<Order> orderRead = repository.findByCustomerName("Mary Doolittle");
+			orderRead.ifPresent(value ->System.err.println("Found by Customer Name - Order: " + value));
 
 		};
 	}
